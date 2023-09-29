@@ -1,0 +1,89 @@
+.skill-page h1 {
+  font-size: 52px;
+  margin-top: 320px;
+  text-align: center;
+  color: $neon-green;
+  text-shadow: 0 0 20px rgba(0, 252, 55, 0.9);
+}
+
+.skillset {
+  list-style: none;
+  text-align: center;
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+.skillset li {
+  display: inline-block;
+  margin: 70px;
+  padding: 5px;
+}
+
+.skillset li i {
+  text-shadow: 0 0 20px rgba(0, 252, 55, 0.9);
+  animation: shadowAnimation 0.7s infinite alternate;
+}
+
+@keyframes shadowAnimation {
+  0% {
+      text-shadow: 0 0 20px rgba(0, 252, 55, 0.9);
+  }
+  100% {
+      text-shadow: none;
+  }
+}
+
+.skillset p {
+  margin-top: 10px; /* Adjust the spacing between the icon and the word */
+  font-size: 18px; /* Adjust the font size of the word */
+}
+
+.skill-page h2 {
+    display: inline-block; /* or inline */
+    margin-right: 10px; /* Add some spacing between the headings */
+    text-align: center;
+}
+
+.skill-page {
+  text-align: center;
+}
+
+/* Style the dots initially */
+.dot-1,
+.dot-2,
+.dot-3 {
+  opacity: 0;
+  animation: dot-animation 1.5s infinite;
+}
+
+/* Define the animation with delays */
+@keyframes dot-animation {
+  0% {
+      opacity: 0;
+  }
+  25% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+  }
+  75% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+/* Add delays to each dot */
+.dot-1 {
+  animation-delay: 0.5s;
+}
+
+.dot-2 {
+  animation-delay: 1s;
+}
+
+.dot-3 {
+  animation-delay: 1.5s;
+}

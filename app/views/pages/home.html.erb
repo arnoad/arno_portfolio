@@ -1,0 +1,30 @@
+<div class="home-page">
+  <div class="home-page-text">
+    <div class="home-page-text-big">
+      <h1>&gt; Welcome;</h1>
+      <br>
+      <h1 style="font-size: 42px;">&gt; My name is Arno;</h1>
+      <%# <h2>My name is Arno and I'm a Full-Stack Developer based in Cologne.</h2> %>
+      <%# <h3>Graduated from the well-known Bootcamp at "Le Wagon", I'm eager to apply my knowledge and passion for coding to create clean design patterns. I love simple but beautiful things. </h3> %>
+    </div>
+  </div>
+  <div class="home-page-profile-picture">
+    <%= image_tag image_url("arno_profile_pic.jpg"), style: "width: 350px;" %>
+  </div>
+  <div class="home-page-right">
+    <h1>&gt; I'm a Full-Stack Web Developer based in Cologne..</h1>
+  </div>
+</div>
+
+
+<%# MY SKILLS %>
+<%= render "pages/skill" %>
+
+<%# PROJECT %>
+<div class="project-page">
+  <h1>&lsqb;my projects&rsqb; <i class="fa-solid fa-diagram-project"></i></h1>
+  <%# PROJECT PHYSIOSTEOS %>
+  <%= render "pages/project_physiosteos" %>
+  <%# PROJECT CAREPET %>
+  <%= render "pages/project_carepet" %>
+</div>
