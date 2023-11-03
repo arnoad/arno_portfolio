@@ -1,14 +1,14 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
 
 .footer-wrapper {
-  background: $turquoise;
-  height: 60px; /* Set the desired height for your footer */
+  background: transparent;
+  height: 150px; /* Set the desired height for your footer */
   padding: 0 50px;
-  color: $eerie-black;
+  color: $light-gray;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,7 @@ html, body {
 }
 
 .contact-links a {
-  color: $mint-cream;
+  color: $light-gray;
   // opacity: 0.3;
   text-decoration: none;
   font-size: 22px;
@@ -31,40 +31,14 @@ html, body {
   position: relative;
   top: -7px;
   border-radius: 50px;
-
 }
 
 .contact-links p {
-  color: $mint-cream;
+  color: $light-gray;
   font-size: 18px;
 }
 
 .contact-links a:hover {
-  opacity: 1;
-  // color: $turquoise;
-  // box-shadow: 5px 5px 10px #ffffff;
-  // background-color: #54bab89d;
-  // border-radius: 50px;
-  font-size: 26px;
-}
-
-.footer-wrapper .fa-heart {
-  color: #D23333;
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-
-}
-
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-
-}
-
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .footer-links {
-    display: none;
-  }
+  color: $neon-green;
+  text-shadow: 0 0 20px rgba(0, 252, 55, 0.9);
 }
