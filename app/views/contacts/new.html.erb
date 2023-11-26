@@ -1,20 +1,26 @@
-<%= form_with(url: contacts_send_email_path) do |form| %>
-  <div class="field">
-    <%= label_tag :name %>
-    <%= text_field_tag :name, nil, required: true %>
-  </div>
+<div class="contact-page">
+  <h1>&gt; contact form <i class="fa-solid fa-arrow-pointer"></i></h1>
+  <div class="contact-form">
 
-  <div class="field">
-    <%= label_tag :email %>
-    <%= email_field_tag :email, nil, required: true %>
-  </div>
+    <%= form_with(url: contacts_send_email_path) do |form| %>
+      <div class="field">
+        <% label_tag :name %>
+        <%= text_field_tag :name, nil, required: true, placeholder: "your name" %>
+      </div>
 
-  <div class="field">
-    <%= label_tag :message %>
-    <%= text_area_tag :message, nil, required: true %>
-  </div>
+      <div class="field">
+        <% label_tag :email %>
+        <%= email_field_tag :email, nil, required: true, placeholder: "your email"  %>
+      </div>
 
-  <div class="actions">
-    <%= submit_tag 'Send Message' %>
+      <div class="field">
+        <% label_tag :message %>
+        <%= text_area_tag :message, nil, required: true, placeholder: "your message"  %>
+      </div>
+
+      <div class="actions">
+        <%= submit_tag 'Send Message', class: "button-1" %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>

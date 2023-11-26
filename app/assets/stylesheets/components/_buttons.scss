@@ -1,0 +1,16 @@
+.button-1 {
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-color: $neon-green;
+  background: transparent;
+  color: $neon-green;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.button-1:hover {
+  box-shadow: 0 0 165px rgba(0, 252, 55, 0.3);
+  // text-shadow: 0 0 20px rgba(0, 252, 55, 0.9)
+  background-color: $neon-green;
+  color: $dark-gray;
+}
